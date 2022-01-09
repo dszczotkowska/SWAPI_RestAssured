@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.*;
 
 
-public class GetPeople extends BaseTest {
+public class GetPeopleTest extends BaseTest {
 
     @Test
     public void countPeopleOnFirstPage() {

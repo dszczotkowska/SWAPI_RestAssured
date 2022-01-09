@@ -3,7 +3,6 @@ package swapi;
 import base.BaseTest;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -15,7 +14,7 @@ import java.util.stream.Stream;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.*;
 
-public class GetPlanets extends BaseTest {
+public class GetPlanetsTest extends BaseTest {
     private static Stream<Arguments> planetList(){
         return Stream.of(
                 Arguments.of("1","Tatooine","23","desert"),
